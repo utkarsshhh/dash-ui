@@ -1,0 +1,26 @@
+<mat-card style = "width: 400px; margin-left: 520px; margin-top: 100px;">
+    <mat-card-header style="text-align: center; margin-left: 75px;">
+        <mat-card-title>Welcome Back</mat-card-title>
+        <mat-card-subtitle class = 'lead'>Login</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content style="text-align: center;">
+        <form (ngSubmit) = "Login()">
+            <div class = 'form-group'>
+                <mat-form-field style="width: 100%;">
+                    <mat-label>Username</mat-label>
+                    <input matInput placeholder = 'Enter your Username' [(ngModel)] = "username" name = "use">
+                </mat-form-field>
+                <br>
+                <mat-form-field style = "width: 100%;">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder = 'Enter your password' type = 'password' [(ngModel)] = "password" name = "pass" />
+                </mat-form-field>
+                <br>
+                <button mat-raised-button color = "primary">Login</button>
+            </div>
+        </form>
+    </mat-card-content>
+
+</mat-card><br>
+<span class = "text-danger" style="margin-left: 520px;" *ngIf = "notLogged">*{{invalidMessage}}</span>

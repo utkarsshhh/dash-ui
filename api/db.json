@@ -1,0 +1,58 @@
+{
+  "users": [
+    {
+      "username": "utkarsh",
+      "password": "Aa@123456",
+      "age": 14,
+      "id": "1"
+    },
+    {
+      "username": "utkarsh_",
+      "password": "bB@123456",
+      "age": 15,
+      "id": "2"
+    },
+    {
+      "id": "5",
+      "username": "utkarsh___",
+      "password": "bB@123456",
+      "age": 15
+    },
+    {
+      "id": "8",
+      "age": 20,
+      "password": "Utkarsh@1",
+      "username": "utkarsh_p_"
+    },
+    {
+      "id": "9",
+      "age": 19,
+      "password": "Utkarsh@1",
+      "username": "ascsdfdf"
+    },
+    {
+      "id": "10",
+      "age": 19,
+      "password": "Utkarsh@1",
+      "username": "utkarsh_p"
+    },
+    {
+      "id": "11",
+      "age": 111,
+      "password": "Utkarsh@1",
+      "username": "asdasdswd"
+    },
+    {
+      "id": "12",
+      "age": 111,
+      "password": "Utkarsh@1",
+      "username": "asdasdswdaa"
+    },
+    {
+      "id": "13",
+      "age": 111,
+      "password": "Utkarsh@1",
+      "username": "utkarsh_pa"
+    }
+  ]
+}

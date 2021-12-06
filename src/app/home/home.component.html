@@ -1,0 +1,46 @@
+<div style="background-image: url(../../assets/flower4.jpg);">
+    <br>
+    <mat-card style = "width: 400px; margin-left: 520px; padding-top: 50px;">
+        <mat-card-header>
+            Enter the following details to predict the species
+        </mat-card-header>
+        <br>
+        <mat-card-content style="text-align: center;">
+            <form (ngSubmit) = 'predict()'>
+                <div class = 'form-group'>
+                    <mat-form-field style="width: 100%;">
+                        <mat-label>Sepal Length</mat-label>
+                        <input matInput placeholder = 'in cm' type = 'number' step="0.1" min="4.0" [(ngModel)] = 'sepaLength' name = 'sepL' required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field style="width: 100%;">
+                        <mat-label>Sepal Width</mat-label>
+                        <input matInput placeholder = 'in cm' type = 'number' step="0.1" min="2.0" [(ngModel)] = 'sepaWidth' name = 'sepW' required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field style="width: 100%;">
+                        <mat-label>Petal Length</mat-label>
+                        <input matInput placeholder = 'in cm' type = 'number' step="0.1" min="1.0" [(ngModel)] = 'petaLength' name = 'petL' required>
+                    </mat-form-field>
+                    <br>
+                    <mat-form-field style="width: 100%;">
+                        <mat-label>Petal Width</mat-label>
+                        <input matInput placeholder = 'in cm' type = 'number' step="0.1" min="0.1" [(ngModel)] = 'petaWidth' name = 'petW' required>
+                    </mat-form-field>
+                    <br>
+                    <button mat-raised-button class = 'btn btn-primary'>Predict</button>&nbsp;&nbsp;&nbsp;
+                    <button mat-raised-button class = 'btn btn-warning' type = 'reset' (click) ="reset_card()">Reset</button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+    <br>
+    <div *ngIf = "doDisplay" >
+    <mat-card style="width: 400px; margin-left: 520px; padding-bottom: 20px; text-align: center;">
+    {{predictedVal}}
+    </mat-card>
+    </div>
+    <br>
+</div>
+
+
